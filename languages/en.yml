@@ -60,6 +60,7 @@ aside:
   card_categories: Categories
   card_tags: Tags
   card_archives: Archives
+  card_calendar: Article calendar
   card_recent_post: Recent Post
   card_webinfo:
     headline: Info
