@@ -60,6 +60,14 @@
           span.post-meta-label=_p('post.page_pv') + ':'
           if block
             block
+      //- for pv and count
+      mixin uvBlock(parent_id, parent_class, parent_title)
+        span.post-meta-separator |
+        span(class=parent_class id=parent_id data-flag-title=page.title)
+          i.far.fa-user.fa-fw.post-meta-icon
+          span.post-meta-label=_p('post.page_uv') + ':'
+          if block
+            block
 
       - const commentUse = comments.use
       if page.comments !== false && commentUse && !comments.lazyload
@@ -86,6 +94,10 @@
       else if theme.busuanzi.page_pv
         +pvBlock('','post-meta-pv-cv','')
           span#busuanzi_value_page_pv
+            i.fa-solid.fa-spinner.fa-spin
+      if theme.busuanzi.page_uv
+        +uvBlock('','post-meta-uv-cv','')
+          span#busuanzi_page_uv
             i.fa-solid.fa-spinner.fa-spin
 
       if comments.count && !comments.lazyload && page.comments !== false && comments.use

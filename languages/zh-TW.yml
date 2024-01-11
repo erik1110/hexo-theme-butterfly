@@ -24,6 +24,7 @@ post:
   min2read: 閱讀時長
   min2read_unit: 分鐘
   page_pv: 閱讀量
+  page_uv: 訪客數
   comments: 評論數
   copyright:
     author: 文章作者

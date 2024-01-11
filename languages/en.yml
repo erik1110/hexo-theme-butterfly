@@ -24,6 +24,7 @@ post:
   min2read: Reading Time
   min2read_unit: mins
   page_pv: Post Views
+  page_uv: Unique Visitors
   comments: Comments
   copyright:
     author: Author
